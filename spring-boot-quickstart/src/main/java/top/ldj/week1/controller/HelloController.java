@@ -23,6 +23,12 @@ public class HelloController {
     public List<String> getList() {
         return List.of("aaa", "bbb", "ccc");
     }
+
+
+    @GetMapping("/strings")
+    public List<String> strings(){
+            return List.of("spring", "boot");
+    }
 }
 
 

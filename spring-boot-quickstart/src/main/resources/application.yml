@@ -2,8 +2,8 @@ server:
   port: 8082
 
   # 自定义属性
-  my:
-    mood:
-      today:周五
-      content: 期待周末
-      author: "程序员"
+#  my:
+#    mood:
+#      today:周五
+#      content: 期待周末
+#      author: "程序员"
