@@ -2,8 +2,13 @@ server:
   port: 8082
 
   # 自定义属性
-#  my:
-#    mood:
-#      today:周五
-#      content: 期待周末
-#      author: "程序员"
+my:
+  #心情语录
+  mood:
+    today: 周五
+    content: 期待周末
+    author: 程序员
+  #功能开关
+  feature:
+    helloSwitch: true
+    closeMsg: "该接口正在维修，10分钟后再来"
