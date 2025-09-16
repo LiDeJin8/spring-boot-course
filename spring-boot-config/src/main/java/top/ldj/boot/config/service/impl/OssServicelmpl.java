@@ -1,4 +1,4 @@
-package top.ldj.boot.config.impl;
+package top.ldj.boot.config.service.impl;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
