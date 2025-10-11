@@ -16,12 +16,12 @@ import java.time.LocalDate;
 @Data
 @Component
 public class Team {
-    @Value("${team.leader")
+    @Value("${team.leader}")
     @NotNull
     @Length(min = 2, max = 5, message = "长度在2-10之间")
     private String leader;
 
-    @Value("${team.phone")
+    @Value("${team.phone}")
     @Pattern(regexp = "^[0-9]{11}$", message = "手机号码格式不正确")
     private String phone;
 

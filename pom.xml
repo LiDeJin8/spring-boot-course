@@ -15,15 +15,62 @@
     <name>spring-boot-course</name>
     <description>spring-boot-course</description>
     <modules>
-        <module>spring-boot-quickstart</module>
         <module>spring-boot-config</module>
+        <module>spring-boot-quickstart</module>
+        <module>spring-boot-redis</module>
+        <module>spring-boot-exception</module>
+        <module>spring-boot-mp</module>
+        <module>spring-boot-filter-interceptor</module>
+        <module>spring-boot-filterinterceptor</module>
+        <module>spring-boot-schedule</module>
     </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <sms-sdk-version>1.0.4</sms-sdk-version>
+        <aliyun-oss-version>3.18.3</aliyun-oss-version>
+        <hutool.version>5.8.38</hutool.version>
+        <qrcode.version>3.5.3</qrcode.version>
+        <mybatis-plus.version>3.5.7</mybatis-plus.version>
+        <mysql.version>8.3.0</mysql.version>
+        <datafacker.version>2.2.2</datafacker.version>
+        <fastjson2.version>2.0.47</fastjson2.version>
+        <commons-pool2.version>2.12.0</commons-pool2.version>
+
     </properties>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.alibaba.fastjson2</groupId>
+                <artifactId>fastjson2</artifactId>
+                <version>${fastjson2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cloopen</groupId>
+                <artifactId>java-sms-sdk</artifactId>
+                <version>${sms-sdk-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-pool2</artifactId>
+                <version>${commons-pool2.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.datafaker</groupId>
+                <artifactId>datafaker</artifactId>
+                <version>${datafacker.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-spring-boot3-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
